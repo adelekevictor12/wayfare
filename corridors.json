@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-11-28T15:05:24Z",
+  "corridors": [
+    {
+      "corridor": "USDC-EURMTL",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "EURMTL",
+        "issuer": "GACKTN5DAZGWXRWB2WLM6OPBDHAMT6SJNGLJZPQMEZBUR4JUGBX2UK7V",
+        "peg": "EUR",
+        "asset": "stellar:EURMTL:GACKTN5DAZGWXRWB2WLM6OPBDHAMT6SJNGLJZPQMEZBUR4JUGBX2UK7V"
+      },
+      "integrity": "DIRECT",
+      "floor_loss_pct": "0.00",
+      "floor_size": "0.1",
+      "worst_loss_pct": "3.02",
+      "worst_size": "5000",
+      "recorded_at": "2026-11-28T15:05:09Z",
+      "chain_head": {
+        "seq": 13,
+        "recorded_at": "2026-11-28T15:05:09Z",
+        "hash": "sha256:d58a9ff2092275bc72b73b1a11271bcc56708ac6ec0e8f92c341ae85ae406e25"
+      }
+    },
+    {
+      "corridor": "USDC-GHSC",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "GHSC",
+        "issuer": "GASBV6W7GGED66MXEVC7YZHTWWYMSVYEY35USF2HJZBLABLYIFQGXZY6",
+        "peg": "GHS",
+        "asset": "stellar:GHSC:GASBV6W7GGED66MXEVC7YZHTWWYMSVYEY35USF2HJZBLABLYIFQGXZY6"
+      },
+      "integrity": "DERIVATIVE",
+      "floor_loss_pct": "65.86",
+      "floor_size": "0.1",
+      "worst_loss_pct": "99.42",
+      "worst_size": "5000",
+      "recorded_at": "2026-11-28T15:04:35Z",
+      "chain_head": {
+        "seq": 14,
+        "recorded_at": "2026-11-28T15:04:35Z",
+        "hash": "sha256:75681e374e18fdd7c43fe70aed63cf9269d35984cf31c2115e6e62c66e721b5c"
+      }
+    },
+    {
+      "corridor": "USDC-KESC",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "KESC",
+        "issuer": "GASBV6W7GGED66MXEVC7YZHTWWYMSVYEY35USF2HJZBLABLYIFQGXZY6",
+        "peg": "KES",
+        "asset": "stellar:KESC:GASBV6W7GGED66MXEVC7YZHTWWYMSVYEY35USF2HJZBLABLYIFQGXZY6"
+      },
+      "integrity": "NO-MARKET",
+      "floor_loss_pct": "0.00",
+      "floor_size": "0",
+      "worst_loss_pct": "0.00",
+      "worst_size": "0",
+      "recorded_at": "2026-11-28T15:04:43Z",
+      "chain_head": {
+        "seq": 14,
+        "recorded_at": "2026-11-28T15:04:43Z",
+        "hash": "sha256:a22fd6ed0fbc865f6f687b12a57cece91b0fb7160281264fb33bb3adf63ef375"
+      }
+    },
+    {
+      "corridor": "USDC-NGNC",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "NGNC",
+        "issuer": "GASBV6W7GGED66MXEVC7YZHTWWYMSVYEY35USF2HJZBLABLYIFQGXZY6",
+        "peg": "NGN",
+        "asset": "stellar:NGNC:GASBV6W7GGED66MXEVC7YZHTWWYMSVYEY35USF2HJZBLABLYIFQGXZY6"
+      },
+      "integrity": "DIRECT",
+      "floor_loss_pct": "0.00",
+      "floor_size": "0.1",
+      "worst_loss_pct": "97.15",
+      "worst_size": "5000",
+      "recorded_at": "2026-11-28T15:04:29Z",
+      "chain_head": {
+        "seq": 14,
+        "recorded_at": "2026-11-28T15:04:29Z",
+        "hash": "sha256:5eb54384a871e3bc58cce769947810bf7d9175c1334dfac1f88cf4ad19330811"
+      }
+    },
+    {
+      "corridor": "USDC-NGNT",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "NGNT",
+        "issuer": "GAWODAROMJ33V5YDFY3NPYTHVYQG7MJXVJ2ND3AOGIHYRWINES6ACCPD",
+        "peg": "NGN",
+        "asset": "stellar:NGNT:GAWODAROMJ33V5YDFY3NPYTHVYQG7MJXVJ2ND3AOGIHYRWINES6ACCPD"
+      },
+      "integrity": "DIRECT",
+      "floor_loss_pct": "0.00",
+      "floor_size": "0.1",
+      "worst_loss_pct": "54.41",
+      "worst_size": "5000",
+      "recorded_at": "2026-10-17T23:36:46Z",
+      "chain_head": {
+        "seq": 1,
+        "recorded_at": "2026-10-17T23:36:46Z",
+        "hash": "sha256:6f00182951a83f3372c29bd960e5488a5e940a0da436a04096db06d0ea9b0e68"
+      }
+    },
+    {
+      "corridor": "USDC-PYUSD",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "PYUSD",
+        "issuer": "GDQE7IXJ4HUHV6RQHIUPRJSEZE4DRS5WY577O2FY6YQ5LVWZ7JZTU2V5",
+        "peg": "USD",
+        "asset": "stellar:PYUSD:GDQE7IXJ4HUHV6RQHIUPRJSEZE4DRS5WY577O2FY6YQ5LVWZ7JZTU2V5"
+      },
+      "integrity": "DIRECT",
+      "floor_loss_pct": "0.00",
+      "floor_size": "0.1",
+      "worst_loss_pct": "0.00",
+      "worst_size": "5000",
+      "recorded_at": "2026-11-28T15:05:17Z",
+      "chain_head": {
+        "seq": 13,
+        "recorded_at": "2026-11-28T15:05:17Z",
+        "hash": "sha256:ae99825411a5e317cafc2d261c98dcf9567aa85a42726f0ab3540fac41153ff7"
+      }
+    },
+    {
+      "corridor": "USDC-USDZ",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "USDZ",
+        "issuer": "GAKTLPC4ZV37SSCITQ5IS5AQ4WPF4CF4VZJQPPAROSGXMYOATF5U6XPR",
+        "peg": "USD",
+        "asset": "stellar:USDZ:GAKTLPC4ZV37SSCITQ5IS5AQ4WPF4CF4VZJQPPAROSGXMYOATF5U6XPR"
+      },
+      "integrity": "DIRECT",
+      "floor_loss_pct": "0.11",
+      "floor_size": "0.1",
+      "worst_loss_pct": "21.92",
+      "worst_size": "5000",
+      "recorded_at": "2026-11-28T15:04:54Z",
+      "chain_head": {
+        "seq": 13,
+        "recorded_at": "2026-11-28T15:04:54Z",
+        "hash": "sha256:0a827eb496bd954ef97c879b7a77a16fcd819e389b1dd88593c8bc4de76da8e8"
+      }
+    },
+    {
+      "corridor": "USDC-ZARZ",
+      "send_asset": {
+        "code": "USDC",
+        "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+        "asset": "stellar:USDC:GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+      },
+      "receive_asset": {
+        "code": "ZARZ",
+        "issuer": "GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U",
+        "peg": "ZAR",
+        "asset": "stellar:ZARZ:GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U"
+      },
+      "integrity": "DIRECT",
+      "floor_loss_pct": "0.00",
+      "floor_size": "0.1",
+      "worst_loss_pct": "21.67",
+      "worst_size": "5000",
+      "recorded_at": "2026-11-28T15:05:02Z",
+      "chain_head": {
+        "seq": 13,
+        "recorded_at": "2026-11-28T15:05:02Z",
+        "hash": "sha256:c48608afa34e18008d5792ce4b81d5699809a8aa98cafc9bac9c7b60b1621219"
+      }
+    }
+  ]
+}

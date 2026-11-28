@@ -1,0 +1,501 @@
+{
+  "format": "wayfare.snapshot",
+  "version": 1,
+  "recorded_at": "2026-11-22T23:16:47Z",
+  "corridor": {
+    "send": {
+      "code": "USDC",
+      "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN"
+    },
+    "receive": {
+      "code": "ZARZ",
+      "issuer": "GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U"
+    },
+    "reference_pair": "USD/ZAR"
+  },
+  "sizes": [
+    "0.1",
+    "1",
+    "5",
+    "10",
+    "25",
+    "50",
+    "100",
+    "250",
+    "500",
+    "1000",
+    "2500",
+    "5000"
+  ],
+  "sources": {
+    "horizon": {
+      "base_url": "https://horizon.stellar.org"
+    },
+    "reference": {
+      "provider": "exchangerate-api",
+      "base_url": "https://open.er-api.com/v6/latest/"
+    }
+  },
+  "notes": [
+    "secondary reference provider: currency-api at https://latest.currency-api.pages.dev/v1/currencies/",
+    "diagnostic reference provider: floatrates at https://www.floatrates.com/daily/"
+  ],
+  "interactions": [
+    {
+      "kind": "reference",
+      "method": "GET",
+      "key": "GET /v6/latest/USD",
+      "url": "https://open.er-api.com/v6/latest/USD",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "public, max-age=3600"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:47 GMT"
+        ]
+      },
+      "content_type": "application/json",
+      "recorded_at": "2026-11-22T23:16:47Z",
+      "body_file": "responses/001-v6-latest-USD.json",
+      "body_sha256": "sha256:adad559967dee5042cbdbb114a8bed797615a109dbc1e6e74597ec094757335f"
+    },
+    {
+      "kind": "reference",
+      "method": "GET",
+      "key": "GET /v1/currencies/usd.json",
+      "url": "https://latest.currency-api.pages.dev/v1/currencies/usd.json",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "public, max-age=0, must-revalidate"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:47 GMT"
+        ],
+        "Etag": [
+          "W/\"6ec13c68fee56000f460bc24c5fdc438\""
+        ]
+      },
+      "content_type": "application/json",
+      "recorded_at": "2026-11-22T23:16:47Z",
+      "body_file": "responses/002-v1-currencies-usd.json",
+      "body_sha256": "sha256:61e1471b928c2c2aebaa7c3c4d634eb146389884934aadf19727b8216cb6714e"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=5\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=5\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/003-paths-strict-send-5.json",
+      "body_sha256": "sha256:7f6d8c02d9c3e94bb835a818b937a9b573e0f40a4f90c61f87ebe775392c5e47"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=50\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=50\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/004-paths-strict-send-50.json",
+      "body_sha256": "sha256:a5faeada2f92fdb36bc5714a6059cc55f110caa064497ea3a20f337ffdd42878"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=5000\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=5000\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/005-paths-strict-send-5000.json",
+      "body_sha256": "sha256:e8cb47fe2789a92b41eb9dfed297c8a76e4635478b2ab2aac8d24398775d319a"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=0.1\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=0.1\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/006-paths-strict-send-0.1.json",
+      "body_sha256": "sha256:f5d18cc42432dce1f24eaa74cbf5e3cda2eb4bfc37e90b3dc7297f332e6347c6"
+    },
+    {
+      "kind": "check",
+      "method": "GET",
+      "key": "GET /",
+      "url": "https://horizon.stellar.org/",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/007-root.json",
+      "body_sha256": "sha256:8a3a106dbad8e6dfd626a4b94be93ed5774423eb631ab224a343e5c25986b9b9"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=10\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=10\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/008-paths-strict-send-10.json",
+      "body_sha256": "sha256:b31117324e11ec542991e3c0f6cec248ca01e6ba20e52124b135abb091f0396d"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=1\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=1\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:48 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:48Z",
+      "body_file": "responses/009-paths-strict-send-1.json",
+      "body_sha256": "sha256:08759e84d5c2384cf85161d83a651019567a74a092549336290080ca3e063566"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=25\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=25\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:49 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:49Z",
+      "body_file": "responses/010-paths-strict-send-25.json",
+      "body_sha256": "sha256:159fdc703a81429c0d437a62f65e19dbe5b4003dae68003e63128bfd5a4e81d6"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=100\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=100\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:49 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:49Z",
+      "body_file": "responses/011-paths-strict-send-100.json",
+      "body_sha256": "sha256:f0ebc215a03be8294f6241b46df538a5ed966bac26adbd1f5bc218f51f433c31"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=500\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=500\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:49 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:49Z",
+      "body_file": "responses/012-paths-strict-send-500.json",
+      "body_sha256": "sha256:2d50c07b5a61e435129fe9c0c5ce5c583dddd6cf6820a27b52d9286f4ceb49a4"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=250\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=250\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:49 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:49Z",
+      "body_file": "responses/013-paths-strict-send-250.json",
+      "body_sha256": "sha256:cdfab4913783d5cd349ff57b711cf33b5af2fd8806d09a62ae40511254c3b359"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=1000\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=1000\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:50 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:50Z",
+      "body_file": "responses/014-paths-strict-send-1000.json",
+      "body_sha256": "sha256:f5be22f55adc6817072841c60a6f0c5964f3ebc2059a2e18278ce66002f7b336"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=2500\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/paths/strict-send?destination_assets=ZARZ%3AGAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026source_amount=2500\u0026source_asset_code=USDC\u0026source_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026source_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:50 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:50Z",
+      "body_file": "responses/015-paths-strict-send-2500.json",
+      "body_sha256": "sha256:1d4c4cd370fb528ba5e2f0fa5ed84116475848260f3d7c9a5218cbaa286a0411"
+    },
+    {
+      "kind": "check",
+      "method": "GET",
+      "key": "GET /.well-known/stellar.toml",
+      "url": "https://zeam.money/.well-known/stellar.toml",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "public, max-age=300, s-maxage=300"
+        ],
+        "Content-Type": [
+          "text/plain; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:51 GMT"
+        ]
+      },
+      "content_type": "text/plain; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:51Z",
+      "body_file": "responses/016-.well-known-stellar.toml.json",
+      "body_sha256": "sha256:03c5c1227b7e5781cc247bee74ac02b98bf2f41173543747f25e4be6da1dfcd9"
+    },
+    {
+      "kind": "check",
+      "method": "GET",
+      "key": "GET /sep31/info",
+      "url": "https://anchor.zeam.money/sep31/info",
+      "status": 200,
+      "header": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:51 GMT"
+        ]
+      },
+      "content_type": "application/json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:51Z",
+      "body_file": "responses/017-sep31-info.json",
+      "body_sha256": "sha256:565d62f5dc1ae78dc8517941152c7b22551de90d042399b4721826ccfc429542"
+    },
+    {
+      "kind": "check",
+      "method": "GET",
+      "key": "GET /auth?account=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+      "url": "https://anchor.zeam.money/auth?account=GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+      "status": 200,
+      "header": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:52 GMT"
+        ]
+      },
+      "content_type": "application/json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:52Z",
+      "body_file": "responses/018-auth.json",
+      "body_sha256": "sha256:ec066b495ec86b140d16e628cbde63d244ba6128a5efe68c8b5baf48a811845d"
+    },
+    {
+      "kind": "check",
+      "method": "GET",
+      "key": "GET /sep24/info",
+      "url": "https://anchor.zeam.money/sep24/info",
+      "status": 200,
+      "header": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:52 GMT"
+        ]
+      },
+      "content_type": "application/json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:52Z",
+      "body_file": "responses/019-sep24-info.json",
+      "body_sha256": "sha256:7001cbe4ab473eeb8b0549a5d7df4763f0ca8f2334f4a5b26c76d60527674669"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /accounts/GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U",
+      "url": "https://horizon.stellar.org/accounts/GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:52 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:52Z",
+      "body_file": "responses/020-accounts-GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U.json",
+      "body_sha256": "sha256:f3d36126f7407f5ad197154f965c1dd420b239ee6f3e6283e347334971892f41"
+    },
+    {
+      "kind": "horizon",
+      "method": "GET",
+      "key": "GET /order_book?buying_asset_code=ZARZ\u0026buying_asset_issuer=GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026buying_asset_type=credit_alphanum4\u0026limit=200\u0026selling_asset_code=USDC\u0026selling_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026selling_asset_type=credit_alphanum4",
+      "url": "https://horizon.stellar.org/order_book?buying_asset_code=ZARZ\u0026buying_asset_issuer=GAROH4EV3WVVTRQKEY43GZK3XSRBEYETRVZ7SVG5LHWOAANSMCTJBB3U\u0026buying_asset_type=credit_alphanum4\u0026limit=200\u0026selling_asset_code=USDC\u0026selling_asset_issuer=GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN\u0026selling_asset_type=credit_alphanum4",
+      "status": 200,
+      "header": {
+        "Cache-Control": [
+          "no-cache, no-store, max-age=0"
+        ],
+        "Content-Type": [
+          "application/hal+json; charset=utf-8"
+        ],
+        "Date": [
+          "Sun, 22 Nov 2026 23:16:53 GMT"
+        ]
+      },
+      "content_type": "application/hal+json; charset=utf-8",
+      "recorded_at": "2026-11-22T23:16:53Z",
+      "body_file": "responses/021-order_book.json",
+      "body_sha256": "sha256:2d0c783438448498e3533a6be7adbdd94f4b64c43a2817855d86f66f4ffd50bb"
+    }
+  ]
+}
